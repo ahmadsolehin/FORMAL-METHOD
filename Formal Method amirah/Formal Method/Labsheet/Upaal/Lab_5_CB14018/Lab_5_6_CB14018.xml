@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+clock x;
+chan Push;</declaration>
+	<template>
+		<name x="5" y="5">Light</name>
+		<declaration>// Place local declarations here.
+bool x;
+</declaration>
+		<location id="id0" x="136" y="-51">
+			<name x="126" y="-85">Bright</name>
+		</location>
+		<location id="id1" x="-8" y="-51">
+			<name x="-18" y="-85">Light</name>
+		</location>
+		<location id="id2" x="-153" y="-51">
+			<name x="-163" y="-85">Start</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-93" y="-8">x &gt; 3</label>
+			<label kind="synchronisation" x="-93" y="25">Push?</label>
+			<nail x="-76" y="25"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="synchronisation" x="-17" y="-212">Push?</label>
+			<nail x="0" y="-187"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="guard" x="25" y="-76">x &lt;= 3</label>
+			<label kind="synchronisation" x="34" y="-51">Push?</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-102" y="-51">Push?</label>
+			<label kind="assignment" x="-102" y="-68">x:=0</label>
+		</transition>
+	</template>
+	<template>
+		<name>User</name>
+		<location id="id3" x="-76" y="0">
+			<name x="-68" y="8">User</name>
+		</location>
+		<init ref="id3"/>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-127" y="-17">Push!</label>
+			<nail x="-42" y="-85"/>
+			<nail x="8" y="-59"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Light1 = Light();
+User1 = User();
+// List one or more processes to be composed into a system.
+system Light1, User1;
+    </system>
+	<queries>
+		<query>
+			<formula>A[] (x&gt;=0)
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

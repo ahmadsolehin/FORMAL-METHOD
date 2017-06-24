@@ -1,0 +1,86 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.05 of 17 April 2013
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running in Model-Checking mode.
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file MC.tla
+Parsing file TLA_Project.tla
+Parsing file C:\Users\David Keong\Desktop\UMP\Semester 06\Formal Method\Wen Sen-Reference\TLA TOOLBOX\toolbox\plugins\org.lamport.tlatools_1.0.0.201304250137\tla2sany\StandardModules\TLC.tla
+Parsing file C:\Users\David Keong\Desktop\UMP\Semester 06\Formal Method\Wen Sen-Reference\TLA TOOLBOX\toolbox\plugins\org.lamport.tlatools_1.0.0.201304250137\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\Users\David Keong\Desktop\UMP\Semester 06\Formal Method\Wen Sen-Reference\TLA TOOLBOX\toolbox\plugins\org.lamport.tlatools_1.0.0.201304250137\tla2sany\StandardModules\Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module TLC
+Semantic processing of module TLA_Project
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2014-05-13 17:34:28)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated.
+@!@!@ENDMSG 2190 @!@!@
+<<"Get", pe1, <<>>, {}>>  TRUE
+<<"Get", pe2, <<>>, {}>>  TRUE
+<<"Get", pe2, <<>>, {pe1}>>  TRUE
+<<"Get", pe1, <<>>, {pe2}>>  TRUE
+<<"Put", p1, <<d1, d1>>, {}>>  TRUE
+<<"Put", p2, <<d1, d1>>, {}>>  TRUE
+<<"Put", p1, <<d1, d1>>, {p2}>>  TRUE
+<<"Put", p2, <<d1, d1>>, {p1}>>  TRUE
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 2.3E-17
+  based on the actual fingerprints:  val = 2.0E-16
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2014-05-13 17:34:29
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 32, col 60 to line 32, col 91 of module TLA_Project: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 33, col 26 to line 33, col 36 of module TLA_Project: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 35, col 17 to line 35, col 56 of module TLA_Project: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 42, col 44 to line 42, col 65 of module TLA_Project: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 43, col 53 to line 43, col 58 of module TLA_Project: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 46, col 54 to line 46, col 83 of module TLA_Project: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 47, col 58 to line 47, col 63 of module TLA_Project: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(6) at 2014-05-13 17:34:29: 45 states generated (49090 s/min), 13 distinct states found (14181 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+45 states generated, 13 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 6.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished. (2014-05-13 17:34:29)
+@!@!@ENDMSG 2186 @!@!@
+Picked up _JAVA_OPTIONS: -Xmx512M

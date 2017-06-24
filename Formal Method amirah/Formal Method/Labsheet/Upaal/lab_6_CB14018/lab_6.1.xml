@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+clock x;
+chan reset;</declaration>
+	<template>
+		<name x="5" y="5">Observer</name>
+		<declaration>// Place local declarations here.
+clock x;</declaration>
+		<location id="id0" x="-93" y="-102">
+			<name x="-103" y="-136">taken</name>
+			<committed/>
+		</location>
+		<location id="id1" x="-263" y="-102">
+			<name x="-273" y="-136">idle</name>
+		</location>
+		<init ref="id1"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="assignment" x="-195" y="-51">x:=0</label>
+			<nail x="-153" y="-51"/>
+			<nail x="-213" y="-51"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="synchronisation" x="-204" y="-187">reset?</label>
+			<nail x="-212" y="-161"/>
+			<nail x="-153" y="-161"/>
+		</transition>
+	</template>
+	<template>
+		<name>Process</name>
+		<declaration>clock x;</declaration>
+		<location id="id2" x="-892" y="-348">
+			<name x="-902" y="-382">loop</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-841" y="-382">x&gt;=2 and x&lt;=3</label>
+			<label kind="synchronisation" x="-841" y="-357">reset!</label>
+			<nail x="-849" y="-391"/>
+			<nail x="-849" y="-314"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Proc = Process();
+Obs = Observer();
+// List one or more processes to be composed into a system.
+system Proc, Obs;
+    </system>
+	<queries>
+		<query>
+			<formula>A[]x&gt;3 imply not Obs.taken
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt;Obs.idle and x&gt;3
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>A[]Obs.idle imply x&lt;=3
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt;Obs.idle and x&gt;2
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>A[]Obs.taken imply (x&gt;=2 and x&lt;=3)
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt;Obs.idle and x&gt;3
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>A[]Obs.taken imply x&gt;=2
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

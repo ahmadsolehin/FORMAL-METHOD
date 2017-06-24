@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="5" y="5">Process</name>
+		<declaration>// Place local declarations here.</declaration>
+		<location id="id0" x="-51" y="-76">
+			<name x="-61" y="-110">loop</name>
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<nail x="-43" y="-152"/>
+			<nail x="25" y="-118"/>
+		</transition>
+	</template>
+	<template>
+		<name>Observer</name>
+		<location id="id1" x="68" y="-93">
+			<name x="58" y="-127">taken</name>
+		</location>
+		<location id="id2" x="-119" y="-85">
+			<name x="-129" y="-119">idle</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id2"/>
+			<nail x="-34" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Proc = Process();
+Obs = Observer();
+// List one or more processes to be composed into a system.
+system Proc, Obs;
+    </system>
+	<queries>
+	</queries>
+</nta>

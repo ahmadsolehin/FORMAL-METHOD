@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+chan a;
+clock x, y, read;
+int n;
+</declaration>
+	<template>
+		<name x="5" y="5">HPHazard</name>
+		<declaration>// Place local declarations here.</declaration>
+		<location id="id0" x="-25" y="-306">
+			<name x="-76" y="-298">PNext</name>
+		</location>
+		<location id="id1" x="59" y="-187">
+			<name x="49" y="-221">PHazard</name>
+		</location>
+		<location id="id2" x="-102" y="-187">
+			<name x="-112" y="-221">HP</name>
+			<label kind="invariant" x="-136" y="-170">y&lt;=10</label>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-102" y="-331">n==5</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="guard" x="25" y="-272">y&gt;=4</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-42" y="-221">y&gt;=3</label>
+			<label kind="synchronisation" x="-34" y="-204">a!</label>
+			<label kind="assignment" x="-42" y="-187">y:=0</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">acquire</name>
+		<declaration>// Place local declarations here.</declaration>
+		<location id="id3" x="-136" y="51">
+			<name x="-111" y="34">HPhazard</name>
+		</location>
+		<location id="id4" x="-136" y="-85">
+			<name x="-187" y="-102">wait</name>
+		</location>
+		<location id="id5" x="-306" y="-85">
+			<name x="-316" y="-119">HP</name>
+			<label kind="invariant" x="-316" y="-68">x&lt;=4</label>
+		</location>
+		<init ref="id5"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-272" y="-34">x&gt;=2</label>
+			<label kind="synchronisation" x="-212" y="-34">a?</label>
+			<label kind="assignment" x="-238" y="8">read:=0</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-102" y="-51">x&gt;=2</label>
+			<label kind="synchronisation" x="-119" y="-34">a?</label>
+			<label kind="assignment" x="-110" y="-8">read:=0</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-246" y="-119">x&gt;=2</label>
+			<label kind="assignment" x="-255" y="-85">read:=1</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+H = HPHazard();
+A = acquire();
+
+// List one or more processes to be composed into a system.
+system H, A;
+    </system>
+	<queries>
+		<query>
+			<formula>E&lt;&gt; y==0 and x==0
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; y==3 and x==3
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

@@ -1,0 +1,53 @@
+﻿─ section Quiz31CB14018 parents standard_toolkit └
+
+
+─ [ STUDENT ] └
+
+┌ Register
+  enrolled : ℙ STUDENT 
+  completed : ℙ STUDENT
+|
+  completed⊂enrolled
+└
+
+┌ AddStudent
+  ΔRegister
+  student?  :STUDENT
+|
+  student?∉enrolled
+  enrolled = {student?} ∪ enrolled
+└
+
+┌ RecordStudent
+   ΔRegister
+  student?  :STUDENT
+|
+  student?∉completed
+  completed = {student?} ∪ completed
+└
+
+─
+  REPORT ::= ok|not_ok
+└
+
+┌ Success
+  completed!:REPORT
+|
+  completed!=ok
+└
+
+┌ EnquireStudent
+  ΞRegister
+  student?  :STUDENT
+  completed! :REPORT
+|
+  student?∈completed
+  completed!=ok
+└
+
+
+
+
+
+
+This specification describes ...

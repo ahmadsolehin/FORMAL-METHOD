@@ -1,0 +1,85 @@
+﻿─ section Lab1CB14018 parents standard_toolkit
+└
+─ [ NAME, DATE ] └
+
+This specification describes ...
+┌BirthdayBook
+known : ℙ NAME
+birthday : NAME → DATE
+|
+known = dom birthday
+└
+
+ ┌ AddBirthday
+ ΔBirthdayBook
+ name? : NAME
+ date? : DATE
+ |
+ name? ∉  known
+ birthday =   birthday ∪ { name? ↦  date?}
+ └
+ 
+┌ FindBirthday
+  ΞBirthdayBook
+  name?:NAME
+  date! :DATE
+|
+  name?∈known
+  date! = birthday(name?)
+└
+
+  ┌ Remind
+  ΞBirthdayBook
+  today? :DATE
+  cards! :ℙ NAME
+|
+  cards! = {n:known | birthday(n) = today?}
+└
+┌ InitBirthdayBook
+  BirthdayBook
+|
+  known = ∅
+└
+
+─
+  REPORT::= ok | already_known|not_known 
+└
+
+┌ Sucess
+  result! :REPORT
+|
+  result! =ok
+└
+
+┌ AlreadyKnown
+  ΞBirthdayBook
+  name? : NAME
+  result! : REPORT
+|
+  name? ∈ known
+  result! = already_known
+└
+RAddBirthday ==
+    ( AddBirthday ∧ Success) ∨ AlreadyKnown
+    
+    ┌ NotKnown
+  ΞBirthdayBook
+  name? : NAME
+  result! : REPORT
+|
+  name? ∉ known
+  result! = not_known
+└
+
+RRemind == Remind ∧ Success
+RFindBirthday == (FindBirthday ∧ Success) ∨ NotKnown
+
+//
+∪ = set of all element that are in set
+∩ = set of all element that are intersect 
+∅ = empty set or null set
+∈ = set of membership
+∉ = Non membership set
+
+
+

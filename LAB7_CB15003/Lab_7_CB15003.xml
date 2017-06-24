@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+</declaration>
+	<template>
+		<name x="5" y="5">Normal</name>
+		<declaration>// Place local declarations here.
+clock x;</declaration>
+		<location id="id0" x="-59" y="-212">
+			<name x="-69" y="-246">P1</name>
+		</location>
+		<location id="id1" x="102" y="-212">
+			<name x="92" y="-246">P2</name>
+		</location>
+		<location id="id2" x="-221" y="-212">
+			<name x="-231" y="-246">P0</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+		</transition>
+	</template>
+	<template>
+		<name>Urgent</name>
+		<declaration>clock x;</declaration>
+		<location id="id3" x="85" y="-187">
+			<name x="75" y="-221">P2</name>
+		</location>
+		<location id="id4" x="-51" y="-187">
+			<name x="-61" y="-221">P1</name>
+			<urgent/>
+		</location>
+		<location id="id5" x="-212" y="-187">
+			<name x="-222" y="-221">P0</name>
+		</location>
+		<init ref="id5"/>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id4"/>
+		</transition>
+	</template>
+	<template>
+		<name>Committed</name>
+		<declaration>clock x;</declaration>
+		<location id="id6" x="102" y="-187">
+			<name x="92" y="-221">P2</name>
+		</location>
+		<location id="id7" x="-42" y="-187">
+			<name x="-52" y="-221">P1</name>
+			<committed/>
+		</location>
+		<location id="id8" x="-187" y="-187">
+			<name x="-197" y="-221">P0</name>
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id7"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+P0 = Normal();
+P1 = Urgent();
+P2 = Committed();
+
+// List one or more processes to be composed into a system.
+system P0, P1, P2;
+    </system>
+	<queries>
+		<query>
+			<formula>E&lt;&gt; P0.P1 and P0.x&gt;0
+
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

@@ -1,0 +1,246 @@
+!SESSION 2014-05-10 20:54:12.607 -----------------------------------------------
+eclipse.buildId=1.4.2
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_MY
+Framework arguments:  C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+
+!ENTRY org.lamport.tla.toolbox.product.standalone 1 -1 2014-05-10 20:54:32.217
+!MESSAGE TLA+ Toolbox started with 1 arguments.
+
+!ENTRY org.lamport.tla.toolbox.product.standalone 1 -1 2014-05-10 20:54:32.221
+!MESSAGE C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+
+!ENTRY org.eclipse.ui 4 4 2014-05-10 20:54:35.916
+!MESSAGE Plugin org.lamport.tla.toolbox, extension org.eclipse.ui.perspectiveExtensions, id toolbox.view.ToolboxWelcomeView: Attribute 'relative' not defined.  This attribute is required when relationship="left".
+
+!ENTRY org.eclipse.ui 4 4 2014-05-10 20:54:35.948
+!MESSAGE Unable to process element: view in perspective extension: null
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:50.503
+!MESSAGE File found C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:50.564
+!MESSAGE footFileName = C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:51.101
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:52.389
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:52.546
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:52.688
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:55:54.335
+!MESSAGE Added a parse result listener.There are now 1 listeners.
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:22.094
+!MESSAGE Open handler invoked on Model_1
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:23.831
+!MESSAGE TLCOutputSourceRegistry for model checking maintains 1 sources.
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:23.845
+!MESSAGE The source TLA_Project___Model_1.launch has 1 prio and 0 listeners
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:23.868
+!MESSAGE TLCOutputSourceRegistry for model checking maintains 1 sources.
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:23.872
+!MESSAGE The source TLA_Project___Model_1.launch has 1 prio and 1 listeners
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:24.218
+!MESSAGE Finished open handler
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:27.431
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:27.553
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:27.604
+!MESSAGE footFileName = C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc 1 0 2014-05-10 20:58:27.943
+!MESSAGE TLC ARGUMENTS: [-fpbits, 0, -workers, 2, -tool, MC, -fp, 0, -config, MC.cfg, -coverage, 3, -checkpoint, 15, -metadir, C:\Users\Asus\Desktop\TLA\TLA_Project.toolbox\Model_1]
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc 1 0 2014-05-10 20:58:28.009
+!MESSAGE JAVA VM ARGUMENTS: [-Dtlc2.tool.fp.FPSet.impl=tlc2.tool.fp.MSBDiskFPSet, -Xmx994m]
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc 1 0 2014-05-10 20:58:28.013
+!MESSAGE Nested JVM used for model checker is: C:\Program Files\Java\jre8
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:28.126
+!MESSAGE TLCOutputSourceRegistry for model checking maintains 1 sources.
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 20:58:28.130
+!MESSAGE The source TLA_Project___Model_1.launch has 4 prio and 1 listeners
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:28.584
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:28.702
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:35.548
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:35.660
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:37.165
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:37.279
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:38.508
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:38.661
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:41.474
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:58:41.580
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.674
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.719
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.751
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.765
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.770
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.781
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.791
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.795
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.803
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 20:59:29.811
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:59:57.829
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 20:59:58.054
+!MESSAGE Resulting status is:  error 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 21:00:23.555
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 21:00:23.570
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 21:00:23.594
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:00:23.641
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox.editor.basic 1 -1 2014-05-10 21:00:23.644
+!MESSAGE \* Declare Data as Constants that specify the data that is to be produce or use
+
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:00:23.703
+!MESSAGE Resulting status is:  error 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:01:12.052
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:01:12.127
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:03.781
+!MESSAGE footFileName = C:\Users\Asus\Desktop\TLA\TLA_Project.tla
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc 1 0 2014-05-10 21:02:04.002
+!MESSAGE TLC ARGUMENTS: [-fpbits, 0, -workers, 2, -tool, MC, -fp, 0, -config, MC.cfg, -coverage, 3, -checkpoint, 15, -metadir, C:\Users\Asus\Desktop\TLA\TLA_Project.toolbox\Model_1]
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc 1 0 2014-05-10 21:02:04.006
+!MESSAGE JAVA VM ARGUMENTS: [-Dtlc2.tool.fp.FPSet.impl=tlc2.tool.fp.MSBDiskFPSet, -Xmx994m]
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc 1 0 2014-05-10 21:02:04.012
+!MESSAGE Nested JVM used for model checker is: C:\Program Files\Java\jre8
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 21:02:04.028
+!MESSAGE TLCOutputSourceRegistry for model checking maintains 1 sources.
+
+!ENTRY org.lamport.tla.toolbox.tool.tlc.ui 1 -1 2014-05-10 21:02:04.032
+!MESSAGE The source TLA_Project___Model_1.launch has 4 prio and 1 listeners
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:04.145
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:04.221
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:05.265
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:05.354
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:06.361
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:06.443
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:07.482
+!MESSAGE Spec build invoked on TLA_Project ...
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:02:07.541
+!MESSAGE Resulting status is:  parsed 
+... build invocation finished.
+
+!ENTRY org.lamport.tla.toolbox 1 -1 2014-05-10 21:03:10.621
+!MESSAGE Removed a parse result listener.There are now 0 listeners.

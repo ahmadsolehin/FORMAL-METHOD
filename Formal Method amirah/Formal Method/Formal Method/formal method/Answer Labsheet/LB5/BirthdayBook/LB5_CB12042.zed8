@@ -1,0 +1,95 @@
+﻿─ section LB5CB12042 parents standard_toolkit
+└
+﻿─ [NAME, DATE] └
+
+─
+  REPORT ::= ok | already_known | not_known
+└
+
+
+This specification describes ...
+
+//birthday schema
+⩤┌ BirthdayBook
+  known : ℙ NAME
+  birthday : NAME → DATE
+|
+ known = dom birthday
+└
+
+//operation
+┌ AddBirthday
+  ΔBirthdayBook
+  name? : NAME
+  date? : DATE
+|
+  name? ∉ known
+  birthday′ = birthday ∪ {name? ↦ date?}
+└
+
+//operation
+┌FindBirthday
+  ΞBirthdayBook
+  name? : NAME
+  date! : DATE
+|
+  name? ∈ known
+  date! = birthday(name?)
+└
+
+//operation
+┌Remind
+ ΞBirthdayBook
+ today? : DATE
+ cards! : ℙ NAME
+|
+  cards! = {n: known | birthday(n) = today?}
+└
+
+//schema
+┌InitBirthdayBook
+  BirthdayBook
+|
+  known = ∅
+└
+
+//schema
+┌Success
+  result! : REPORT
+|
+  result! = ok
+└
+
+//schema
+┌AlreadyKnown
+  ΞBirthdayBook
+  name? :NAME
+  result! : REPORT
+|
+  name? ∈ known
+  result! = already_known
+└
+
+//combination of success and already known
+─
+  RAddBirthday == 
+  (AddBirthday∧Success ) ∨AlreadyKnown
+└
+
+//schema
+┌NotKnown
+  ΞBirthdayBook
+  name? :NAME
+  result! : REPORT
+|
+  name? ∉ known
+  result! = not_known
+└
+
+//combination of schema in system
+─
+ RRemind == Remind ∧ Success
+ RFindBirthday == (FindBirthday ∧ Success) ∨ NotKnown
+└
+
+ 

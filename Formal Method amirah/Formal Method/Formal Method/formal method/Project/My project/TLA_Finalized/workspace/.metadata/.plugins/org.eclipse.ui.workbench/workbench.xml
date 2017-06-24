@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="3" version="2.0">
+<workbenchAdvisor/>
+<window height="600" maximized="true" width="800" x="52" y="52">
+<fastViewData fastViewLocation="16384">
+<orientation position="512" view="toolbox.view.ToolboxExplorer"/>
+</fastViewData>
+<perspectiveBar/>
+<coolbarLayout>
+<coolItem id="PDFViewer.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.annotationNavigation" itemType="typeToolBarContribution" x="91" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.navigation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.lamport.tla.toolbox.editor.basic.TLAEditorAndPDFViewer" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="&lt;Unknown Label&gt; - Specification">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="org.lamport.tla.toolbox.editor.basic.TLAEditorAndPDFViewer" name="TLA_Project.tla" partName="TLA_Project.tla" path="C:/Users/Asus/Desktop/TLA/TLA_Project.tla" title="TLA_Project.tla" tooltip="TLA_Project/TLA_Project.tla" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TLA_Project/TLA_Project.tla"/>
+</editor>
+<editor id="org.lamport.tla.toolbox.tool.tlc.ui.editor.ModelEditor" name="TLA_Project___Model_1.launch" partName="Model_1" path="C:/Users/Asus/Desktop/TLA/TLA_Project.toolbox/TLA_Project___Model_1.launch" title="Model_1" tooltip="TLA_Project/TLA_Project___Model_1.launch" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TLA_Project/TLA_Project___Model_1.launch"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="root" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
+<view id="toolbox.view.ToolboxExplorer" partName="Spec Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="1"/>
+</view>
+</views>
+<perspectives activePart="org.lamport.tla.toolbox.editor.basic.TLAEditorAndPDFViewer" activePerspective="org.lamport.tla.toolbox.ui.perspective.specLoaded">
+<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<descriptor class="org.lamport.tla.toolbox.ui.perspective.InitialPerspective" id="org.lamport.tla.toolbox.ui.perspective.initial" label="Welcome to Toolbox"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViews>
+<view id="toolbox.view.ToolboxExplorer" ratio="0.14082398"/>
+</fastViews>
+<fastViewBars/>
+<viewLayoutRec closeable="false" id="toolbox.view.ToolboxExplorer" moveable="false"/>
+<layout>
+<mainWindow>
+<info part="org.eclipse.ui.editorss"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@57459491" ratio="0.7493369" ratioLeft="565" ratioRight="189" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.lamport.tla.toolbox.ui.perspective.SpecLoadedPerspective" id="org.lamport.tla.toolbox.ui.perspective.specLoaded" label="Specification"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<fastViews>
+<view id="toolbox.view.ToolboxExplorer" ratio="0.25"/>
+</fastViews>
+<fastViewBars/>
+<viewLayoutRec closeable="false" id="toolbox.view.ToolboxExplorer" moveable="false"/>
+<layout>
+<mainWindow>
+<info part="org.eclipse.ui.editorss"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@df4b72" ratio="0.7498127" ratioLeft="1001" ratioRight="334" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2f897dab" ratio="0.7498127" ratioLeft="1001" ratioRight="334" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="toolbox.view.ProblemView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.lamport.tla.toolbox.editor.basic.TLAEditorAndPDFViewer" path="/TLA_Project/TLA_Project.tla"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.lamport.tla.toolbox.tool.tlc.ui.editor.ModelEditor" path="/TLA_Project/TLA_Project___Model_1.launch"/>
+</editors>
+<item historyLabel="TLA_Project.tla" index="0">
+<position info="not_deleted" x="2506" y="0"/>
+</item>
+<item historyLabel="Model_1" index="1">
+<position/>
+</item>
+<item historyLabel="Model Checking Results" index="1">
+<position/>
+</item>
+<item historyLabel="Model_1" index="1"/>
+<item historyLabel="TLA_Project.tla" index="0">
+<position info="not_deleted" x="2975" y="0"/>
+</item>
+<item historyLabel="Model_1" index="1">
+<position/>
+</item>
+<item historyLabel="Model_1" index="1"/>
+<item active="true" historyLabel="TLA_Project.tla" index="0">
+<position info="not_deleted" x="2975" y="0"/>
+</item>
+</navigationHistory>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.HeapStatus"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="toolbox.trim"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.lamport.tla.toolbox.tool.tlc.ui.editor.ModelEditor" name="TLA_Project___Model_1.launch" tooltip="TLA_Project/TLA_Project___Model_1.launch">
+<persistable path="/TLA_Project/TLA_Project___Model_1.launch"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.lamport.tla.toolbox.editor.basic.TLAEditorAndPDFViewer" name="TLA_Project.tla" tooltip="TLA_Project/TLA_Project.tla">
+<persistable path="/TLA_Project/TLA_Project.tla"/>
+</file>
+</mruList>
+</workbench>

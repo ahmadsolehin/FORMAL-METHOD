@@ -1,0 +1,29 @@
+-------------------------- MODULE Lab_3_CB14018 ---------------------------
+EXTENDS Naturals
+CONSTANT Data
+VARIABLES val, rdy, ack
+TypeInvariant == /\ val \in Data
+                 /\ rdy \in {0, 1}
+                 /\ ack \in {0, 1}
+Init == /\ val \in Data
+        /\ rdy \in {0, 1}
+        /\ ack = rdy
+Send(d) == /\ rdy = ack
+        /\ val' \in Data
+        /\ rdy' = 1 - rdy
+        /\ UNCHANGED ack
+Rcv == /\ rdy # ack
+       /\ ack' = 1 - ack
+       /\ UNCHANGED <<val, rdy>>
+Next == (\E d \in Data : Send(d)) \/ Rcv
+Spec == Init /\ [][Next]_<<val,rdy,ack>>
+THEOREM Spec =>[]TypeInvariant 
+Print(exp1, exp2)== exp2
+        
+ 
+                 
+
+=============================================================================
+\* Modification History
+\* Last modified Tue Oct 20 09:14:42 SGT 2015 by fskkpump
+\* Created Tue Oct 20 08:26:57 SGT 2015 by fskkpump
